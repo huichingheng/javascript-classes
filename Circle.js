@@ -4,24 +4,29 @@ class Circle {
   }
 
   area() {
-    return (Math.PI * this.radius ** 2).toFixed(1);
+    return Math.PI * this.radius ** 2;
   }
 
   perimeter() {
-    return (2 * Math.PI * this.radius).toFixed(1);
+    return 2 * Math.PI * this.radius;
   }
+
+  
 }
 
-const Circle1 = new Circle(1);
-const Circle2 = new Circle(2);
-const Circle3 = new Circle(3);
+const C1 = new Circle(1);
+const C2 = new Circle(2);
+const C3 = new Circle(3);
 
-console.log(Math.fround(2));
-
-console.log("Circle1 area is: ", Circle1.area(1));
-console.log("Circle2 area is: ", Circle2.area(2));
-console.log("Circle3 area is: ", Circle3.area(3));
-
-console.log("Perimeter1 area is: ", Circle1.perimeter(1));
-console.log("Perimeter2 area is: ", Circle2.perimeter(2));
-console.log("Perimeter3 area is: ", Circle3.perimeter(3));
+console.log(
+  "C1 area: " + C1.area().toFixed(1),
+  "| perimeter: " + C1.perimeter().toFixed(1)
+);
+console.log(
+  "C2 area: " + C2.area().toFixed(1),
+  "| perimeter: " + C2.perimeter().toFixed(1)
+);
+console.log(
+  "C3 area: " + C3.area().toFixed(1),
+  "| perimeter: " + C3.perimeter().toFixed(1)
+);
